@@ -1,0 +1,69 @@
+.page-node-type-downloads{
+  .region-content{
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .field--name-field-introductie{
+    margin-top: 5.8rem;
+    margin-bottom: 5.8rem;
+    font-size: 1.9rem;
+    line-height: 3.4rem;
+    font-weight: 300;
+  }
+  .field--name-field-downloads-bestanden{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    .field__item{
+      margin-bottom: 2.25rem;
+      width: 50%;
+      text-align: center;
+    }
+    a{
+      line-height: 2.9rem;
+      font-weight: 600;
+      display: block;
+      color: #000;
+      text-decoration: underline;
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}
+.downloads__content--wrapper{
+  position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 100%;
+    .views-row{
+      margin-bottom: 2.25rem;
+      width: 50%;
+      text-align: left;
+    }
+    a{
+      line-height: 2.9rem;
+      font-weight: 600;
+      display: block;
+      color: #000;
+      text-decoration: underline;
+      &:hover{
+        color: $red;
+      }
+    }
+}
+
+.downloads__group--wrapper{
+  margin-bottom: 4rem;
+}
+.downloads__group--title{
+   h3{
+      display: inline-block;
+      font-size: 2.6rem;
+      line-height: 1.5em;
+      margin-bottom: 1.2rem;
+    }
+  }

@@ -1,0 +1,59 @@
+.block-views-blocklink-item-block-1{
+  background-color: #000;
+  color: #fff;
+  .link-item__inner{
+    width: 100%;
+    max-width: 80.1rem;
+    margin: 0 auto;
+    padding: 5.5rem 0 6rem;
+    position: relative;
+  }
+  a{
+    color: #fff;
+    display: block;
+    path{
+        stroke: #fff;
+        @include single-transition(all 0.4s ease);
+    }
+    line{
+      stroke: #fff;
+      @include single-transition(all 0.4s ease);
+    }
+    &:hover{
+      .group__42{
+        width: 100%;
+        height: 100%;
+      }
+      #Exclusion_6{
+         @include translate(1.9158rem, 1.3932rem);
+        @include transform(scale(.91,.91));
+      }
+       path{
+        stroke: $red;
+        fill: $red;
+      }
+      line{
+        stroke: $red;
+      }
+    }
+  }
+  svg{
+    position: absolute;
+    right: 0;
+    top: 48%;
+    overflow: visible;
+  }
+}
+.views-field-field-link-item-titel{
+  font-size: 2.6rem;
+  line-height: 4.5rem;
+  width: 80%;
+}
+.views-field-field-link-item-body{
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-top: 1.4rem;
+}
+#Exclusion_6, .group__42{
+  @include single-transition(all 0.4s ease);
+}

@@ -1,0 +1,50 @@
+@media only screen and (min-width: 320px) and (max-width: 1086px) {
+  .page-node-type-page, .page-node-type-faq, .page-node-type-downloads{
+    .layout-content__inner{
+      padding-top: 12rem;
+    }
+    .field--name-field-header-afbeelding{
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .field--name-field-tekst-item{
+      margin-top: 7rem;
+      > .field__item:last-of-type{
+        margin-bottom: 9rem;
+      }
+      .two-column{
+        width: 70rem;
+        margin: 0 auto;
+        .left__region{
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .page-node-type-page, .page-node-type-faq, .page-node-type-downloads{
+    .layout-content__inner{
+      //margin-top: 7rem;
+      margin-bottom: 7rem;
+    }
+    .field--name-node-title h2{
+      font-size: 3rem;
+    }
+    .field--name-field-tekst-item{
+      margin-top: 5rem;
+      > .field__item{
+        margin-bottom: 3rem;
+      }
+      > .field__item:last-of-type{
+        margin-bottom: 7rem;
+      }
+      .two-column{
+        width: 100%;
+      }
+    }
+  }
+}

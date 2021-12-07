@@ -1,0 +1,129 @@
+.page-node-type-merk{
+  .layout-content__inner{
+    padding-top: 13rem;
+    h3{
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.6rem;
+      margin-bottom: 2.6rem;
+    }
+    h1{
+      display: block;
+       text-align: center;
+      font-size: 4rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+    }
+  }
+  .field--name-body{
+    margin-bottom: 4.2rem;
+  }
+  .konnu__header{
+    h2{
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+    }
+  }
+  .field--name-field-merk-logo{
+    float: left;
+    margin-right: 6.3rem;
+  }
+  .merk__body-wrapper{
+     float: right;
+     width: 100%;
+     max-width: 66rem;
+
+  }
+  .main__region{
+    width: 100%;
+    max-width: 99rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+     margin: 10.9rem auto 0;
+     position: relative;
+    overflow: hidden;
+  }
+  .konnu__footer{
+    clear: both;
+    float: none;
+    margin: 3rem auto 16.6rem;
+    width: 100%;
+    max-width: 99rem;
+  }
+  .field--name-field-bestand-label{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 4rem;
+  }
+  .field--name-field-bestand{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 62.9rem;
+    .field__item{
+       margin-bottom: 2.25rem;
+       width: 50%;
+    }
+    a{
+      line-height: 2.9rem;
+      font-weight: 600;
+      color: #000;
+      text-decoration: underline;
+      &:hover{
+         color: $red;
+      }
+    }
+  }
+  .field--name-field-page-bestanden{
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .right__region{
+    width: 100%;
+    max-width: 120rem;
+    position: relative;
+    clear: both;
+    margin: 0 auto 9rem;
+  }
+  .field--name-field-extra-square-afbeelding{
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+  .field--name-field-extra-full-width{
+    margin-top: 0;
+    margin-bottom: 4rem;
+    img{
+      width: 100%;
+      height: auto;
+      padding: 0 2rem;
+      @include box-sizing(border-box);
+    }
+  }
+}
+.merk__website-wrapper{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5.2rem;
+  &:hover{
+    .field--name-dynamic-twig-fieldnode-globe{
+      @include transform(rotate(-180deg));
+    }
+  }
+}
+.field--name-dynamic-twig-fieldnode-globe{
+  display: inline-block;
+  float: left;
+  margin-right: .77rem;
+
+  @include single-transition(all 0.4s ease);
+}
+.field--name-field-merk-website{
+  font-weight: 600;
+  float: left;
+  a{
+    text-decoration: underline;
+  }
+}

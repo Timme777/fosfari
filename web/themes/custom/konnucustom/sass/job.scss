@@ -1,0 +1,121 @@
+.page-node-type-vacature{
+  .layout-content__inner{
+    padding-top: 12.7rem;
+    margin-bottom: 20.6rem;
+  }
+  .region-content{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .field--name-node-title{
+    margin-bottom: 6.1rem;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto 6.1rem;
+    h2{
+      font-size: 4rem;
+      line-height: 5rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 500;
+      width: 100%;
+      max-width: 67.6rem;
+      margin: 0 auto;
+    }
+  }
+   .field--name-field-introductie{
+    margin: 5.8rem auto;
+    font-size: 1.9rem;
+    line-height: 3.4rem;
+    font-weight: 300;
+    width: 100%;
+    max-width: 70rem;
+  }
+  .field--name-field-tekst-item{
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .field--name-field-extra-full-width{
+    margin-top: 6rem;
+    img{
+      width: 100%;
+      height: auto;
+      padding: 0 2rem;
+      @include box-sizing(border-box);
+    }
+  }
+}
+
+.field--name-dynamic-twig-fieldnode-vacature-datum{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+.field--name-dynamic-copy-fieldnode-solliciteer-2, .field--name-dynamic-twig-fieldnode-solliciteer{
+  text-align: center;
+  a{
+    color: #fff;
+    background-color: $red;
+    border: 0;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1em;
+    padding: 1.8rem 3.6rem 1.5rem;
+    @include border-radius(90px);
+    @include single-transition(all 0.4s ease);
+    margin-bottom: 7.75rem;
+    &:hover{
+      background-color: #000;
+    }
+  }
+}
+.field--name-dynamic-twig-fieldnode-solliciteer{
+  margin-top: 7rem;
+  a{
+    margin-bottom:0;
+  }
+}
+.vacature__info-wrapper{
+  border-top: .1rem solid #DCDCE2;
+  padding-top: 6.45rem;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 6.05rem;
+  border-bottom: .1rem solid #DCDCE2;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto 8.45rem;
+  > div{
+    width: 33%;
+  }
+  .field__label{
+    color: $red;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+  .field__item{
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    margin-top: .8rem;
+  }
+}
+.field--name-field-extra-square-afbeelding{
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 6rem;
+  .field__item{
+    width: 33.33%;
+    @include box-sizing(border-box);
+    padding: 0 1.6rem;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+

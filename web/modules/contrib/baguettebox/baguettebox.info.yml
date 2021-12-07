@@ -1,0 +1,12 @@
+name: BaguetteBox
+type: module
+description: BaguetteBox image formatter.
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:image
+
+# Information added by Drupal.org packaging script on 2021-10-27
+version: '8.x-1.2'
+project: 'baguettebox'
+datestamp: 1635324757

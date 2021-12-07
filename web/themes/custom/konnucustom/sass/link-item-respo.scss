@@ -1,0 +1,57 @@
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .block-views-blocklink-item-block-1{
+    .views-row{
+      width: 100%;
+    }
+    .link-item__inner{
+      @include box-sizing(border-box);
+      padding: 5rem 2.5% 5.8rem;
+    }
+    a{
+
+      svg{
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-top: 3rem;
+        width: 100%;
+      }
+      &:hover{
+        .group__42{
+          -webkit-transform: translate(1.7158rem, 1.3932rem);
+          -moz-transform: translate(1.7158rem, 1.3932rem);
+          -ms-transform: translate(1.7158rem, 1.3932rem);
+          -o-transform: translate(1.7158rem, 1.3932rem);
+          transform: translate(1.7158rem, 1.3932rem);
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: none 0.4s ease;
+        }
+        #Exclusion_6{
+          @include transform(scale(1,1));
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .block-views-blocklink-item-block-1{
+    .link-item__inner{
+      padding: 4rem 5%;
+    }
+  }
+  .field--name-dynamic-token-fieldnode-inschrijfknop-copy{
+    margin-top: 7rem;
+  }
+  .views-field-field-link-item-titel{
+    font-size: 2rem;
+    line-height: 3.8rem;
+    width: 100%;
+  }
+  .views-field-field-link-item-body{
+    font-size: 1.6rem;
+    line-height: 3.8rem;
+  }
+}

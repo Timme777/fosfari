@@ -1,0 +1,82 @@
+.page-node-type-faq{
+  .region-content{
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .field--name-field-introductie{
+    margin-top: 5.8rem;
+    margin-bottom: 5.8rem;
+    font-size: 1.9rem;
+    line-height: 3.4rem;
+    font-weight: 300;
+  }
+}
+.faq__question{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  svg{
+    path{
+      fill:$red;
+    }
+  }
+}
+.faq__group--wrapper{
+  margin-bottom: 4rem;
+}
+.faq__group--title{
+   h3{
+      display: inline-block;
+      font-size: 2.6rem;
+      line-height: 1.5em;
+      margin-bottom: 1.2rem;
+    }
+  }
+  .field--name-field-faq-vraag{
+    font-size: 1.7rem;
+    line-height: 3.6rem;
+    letter-spacing: -.05em;
+    width: calc(100% - 4.8rem);
+    cursor: pointer;
+    @include single-transition(all 0.4s ease);
+    &:hover{
+      color: $red;
+    }
+  }
+  .field--name-field-faq-antwoord{
+    line-height: 2.8rem;
+    margin-bottom: 5rem;
+    display: none;
+    background-color: #F6F6F6;
+    padding: 3rem 2rem;
+    color: #000;
+  }
+
+.field--name-dynamic-twig-fieldparagraph-faq-arrow svg{
+  @include transform(rotate(0));
+  @include single-transition(all 0.4s ease);
+  cursor: pointer;
+  display: none;
+}
+.faq--open{
+  color: $red;
+  .field--name-dynamic-twig-fieldparagraph-faq-arrow svg{
+    @include transform(rotate(90deg));
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .field--name-field-faq-vraag{
+    line-height: 2.8rem;
+  }
+  .field--name-field-faq-item{
+    .field--name-field-faq-vraag{
+      width: calc(100% - 3rem);
+    }
+    .field--name-field-faq-antwoord{
+      padding: 2rem 1.5rem;
+    }
+  }
+}

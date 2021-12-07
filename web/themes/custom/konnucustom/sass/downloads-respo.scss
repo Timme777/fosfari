@@ -1,0 +1,23 @@
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .downloads__content--wrapper{
+    .views-row {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .downloads__group--title{
+   h3{
+      display: block;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .page-nid--21 .webform-submission-contact-formulier-form{
+    width: 100%;
+    h2{
+      line-height: 1.3em;
+    }
+  }
+}

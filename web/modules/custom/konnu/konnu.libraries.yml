@@ -1,0 +1,7 @@
+konnuVue:
+  version: 1.x
+  js:
+    #js/konnuVue.js: { attributes: { type: module } }
+     https://unpkg.com/vue-slick-carousel: {type: external}
+     js/konnuVue.js: { attributes: { type: module } }
+

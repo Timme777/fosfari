@@ -1,0 +1,229 @@
+.page-node-type-opleiding{
+  .layout-content__inner{
+    padding-top: 12.7rem;
+  }
+  .block-system-main-block{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .field--name-node-title{
+    margin-bottom: 6.1rem;
+    h2{
+      font-size: 4rem;
+      line-height: 5rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 500;
+      width: 100%;
+      max-width: 67.6rem;
+      margin: 0 auto;
+    }
+  }
+  .field--name-field-tekst-item{
+      width: 100%;
+      max-width: 70rem;
+      margin: 0 auto;
+  }
+  .field--name-field-extra-full-width{
+    margin-top: 6rem;
+    img{
+       width: 100%;
+      height: auto;
+      padding: 0 2rem;
+      @include box-sizing(border-box);
+    }
+  }
+  .field--name-field-introductie{
+    font-size: 1.9rem;
+    line-height: 3.4rem;
+    font-weight: 300;
+    width: 100%;
+    max-width: 70rem;
+    margin:  5.8rem auto 5.8rem;
+  }
+  .block-webform{
+    width: 70rem;
+    margin: 10.5rem auto 25.8rem;
+    background-color: #F6F6F6;
+    padding: 7.2rem 5.3rem 6.8rem;
+    position: relative;
+    overflow: hidden;
+    input{
+      background-color: transparent;
+    }
+    h2{
+      text-align: center;
+      margin-bottom: 8.2rem;
+    }
+    input[data-drupal-selector="edit-naam"]{
+      width: 100%;
+    }
+    div[data-drupal-selector="edit-form-opleiding-left"]{
+      float: left;
+      width: 29.7rem;
+      input{
+        width: 100%;
+      }
+    }
+    div[data-drupal-selector="edit-form-opleiding-right"]{
+      float: left;
+      width: 22.8rem;
+      margin-left: 6.8rem;
+      input{
+        width: 29.7rem;
+      }
+    }
+    fieldset[data-drupal-selector="edit-privacy-policy"]{
+      clear: both;
+    }
+  }
+   .field--name-field-tekstitem-body{
+    h4{
+      display: inline-block;
+    }
+  }
+
+}
+ .field--name-dynamic-twig-fieldnode-sign-up-knop, .field--name-dynamic-copy-fieldnode-sign-up-knop-2{
+    text-align: center;
+  a{
+    color: #fff;
+    background-color: $red;
+    border: 0;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1em;
+    padding: 1.8rem 3.6rem 1.5rem;
+    @include border-radius(90px);
+    @include single-transition(all 0.4s ease);
+    margin-bottom: 7.75rem;
+    &:hover{
+      background-color: #000;
+    }
+  }
+}
+.opleiding__subtitle{
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.8rem;
+}
+.field--name-dynamic-twig-fieldnode-datum-opleiding{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    i{
+      font-size: 1.4rem;
+      color: $red;
+      position: relative;
+      top: -.4rem;
+      margin-right: 1rem;
+    }
+}
+.opleiding__time-wrapper{
+  border-top: .1rem solid #DCDCE2;
+  padding-top: 6.45rem;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 6.05rem;
+  border-bottom: .1rem solid #DCDCE2;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto 8.45rem;
+}
+.field--name-dynamic-twig-fieldnode-datum-opleiding-copy, .field--name-dynamic-twig-fieldnode-opleiding-time{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  i{
+    font-size: 1.4rem;
+    color: #E93951;
+    position: relative;
+    top: -.4rem;
+    margin-right: 1rem;
+  }
+}
+.field--name-dynamic-twig-fieldnode-datum-opleiding-copy{
+  margin-bottom: 4.4rem;
+}
+.field--name-dynamic-token-fieldnode-opleiding-locatie-naam{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  i{
+    font-size: 1.6rem;
+    color: #E93951;
+    position: relative;
+    top: -.4rem;
+    margin-right: 1rem;
+  }
+}
+.opleiding__left{
+  width: 22.6rem;
+}
+.field--name-field-opleiding-straatnaam{
+  display: inline;
+  padding-left: 2.9rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  &:after{
+    content:',';
+  }
+}
+.field--name-field-opleiding-postcode{
+  display: inline;
+  padding-left: .2rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.field--name-field-opleiding-gemeente{
+   display: inline;
+    padding-left: .2rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+.field--name-dynamic-copy-fieldnode-sign-up-knop-2{
+  margin: 10rem 0 9rem;
+  a{
+    margin: 0;
+  }
+}
+.block-views-blockopleidingen-block-1{
+  border-top: 1px solid #DCDCE2;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  position: relative;
+  .opleiding__right{
+    margin-left: 6.28%;
+    padding-top: 1.5rem;
+  }
+  .views-row{
+    display: flex;
+    padding-top: 5.39rem;
+    padding-bottom: 5.3rem;
+    border-bottom: 1px solid #DCDCE2;
+  }
+  .views-field-field-team-naam{
+    font-size: 2.1rem;
+    letter-spacing: 0.2em;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+  }
+  .views-field-field-team-functie{
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
+    margin-top: .2rem;
+  }
+  .views-field-field-introductie{
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+  }
+}
+

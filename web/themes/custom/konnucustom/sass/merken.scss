@@ -1,0 +1,71 @@
+.page-nid--16{
+  h2{
+      font-size: 3.6rem;
+      line-height: 4.2rem;
+      text-align: center;
+  }
+  .layout-content__inner{
+    padding-top: 13.4rem;
+  }
+}
+.block-views-blockmerken-block-1{
+  margin: 9.8rem auto 0;
+  width: 99rem;
+  position: relative;
+   .grid-sizer{
+    width: 30.6%;
+  }
+  .gutter-sizer{
+    width: 4.14%;
+  }
+  .view-content{
+    opacity: 0;
+    @include single-transition(all 0.4s ease);
+  }
+  .view-content.show{
+    opacity: 1;
+  }
+ .views-row{
+    width: 30.6%;
+    height: 53.2rem;
+    margin-bottom: .73rem;
+    @include box-sizing(border-box);
+  }
+  a{
+    &:hover{
+      img{
+        @include translate(-50%,-55%);
+      }
+      .merken__content{
+        color: $red;
+      }
+    }
+  }
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%,-50%);
+    @include single-transition(all 0.4s ease);
+  }
+  .merken__logo-inner{
+  height: 30.3rem;
+  position: relative;
+  border: 1px solid #DCDCE2;
+}
+.merken__content{
+  color: #000;
+  @include single-transition(all 0.4s ease);
+  h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:  3.4rem 0 3.4rem;
+  }
+}
+.merken__intro{
+  font-weight: 300;
+  line-height: 2.8rem;
+}
+
+}

@@ -1,0 +1,55 @@
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+ .page-nid--18{
+  .field--name-field-tekst-item{
+     margin-top: 9rem !important;
+     margin-left: 0 !important;
+     h3{
+      line-height: 5rem;
+      font-size: 4.2rem;
+     }
+     .one-column{
+      width: 100% !important;
+    }
+  }
+
+ }
+ .block-views-blocktoepassingen-block-2{
+    margin-top: 5rem;
+   .views-row{
+      img{
+        width: 100%;
+        height: auto;
+      }
+   }
+   .title{
+    font-size: 1.6rem;
+   }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+ .page-nid--18{
+  .layout-content__inner{
+    padding-top: 12rem;
+    margin-top: 0;
+  }
+  .field--name-field-tekst-item{
+    margin-top: 4rem !important;
+     h3{
+      line-height: 4rem;
+      font-size: 3rem;
+     }
+    }
+ }
+  .block-views-blocktoepassingen-block-2{
+    margin-top: 7rem;
+     .grid-sizer{
+        width: 100%;
+      }
+      .gutter-sizer{
+        width: 0;
+      }
+      .views-row{
+        width: 100%;
+      }
+  }
+}

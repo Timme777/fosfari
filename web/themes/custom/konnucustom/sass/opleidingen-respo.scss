@@ -1,0 +1,102 @@
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .page-node-type-opleidingen{
+    .field--name-node-title{
+      margin-bottom: 9rem;
+    }
+    .field--name-body{
+      margin: 0 auto 5rem;
+      max-width: 70rem;
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+      font-weight: 300;
+      h2{
+        line-height: 5rem;
+        font-size: 4.2rem;
+      }
+    }
+  }
+  .field--name-field-opleidingen-afbeelding{
+    margin-bottom: 5rem;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .block-views-blockopleidingen-block-2{
+    h2{
+      margin-left: 0;
+    }
+    .grid-sizer{
+      width: 49.6%;
+    }
+    .gutter-sizer{
+      width: 0.81%;
+    }
+    .views-row{
+      width: 49%;
+      height: 43.5rem;
+      a{
+        width: 100%;
+        padding: 5rem 4rem 5rem;
+        &:hover{
+          .group__42{
+            -webkit-transform: translate(1.7158rem, 1.3932rem);
+            -moz-transform: translate(1.7158rem, 1.3932rem);
+            -ms-transform: translate(1.7158rem, 1.3932rem);
+            -o-transform: translate(1.7158rem, 1.3932rem);
+            transform: translate(1.7158rem, 1.3932rem);
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: none 0.4s ease;
+          }
+          #Exclusion_6{
+            @include transform(scale(1,1));
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+   .page-node-type-opleidingen{
+    .layout-content__inner{
+      padding-top: 12rem;
+    }
+    .field--name-node-title{
+      margin-bottom: 9rem;
+      h2{
+        font-size: 3rem;
+      }
+    }
+    .field--name-body{
+      h3{
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+      }
+    }
+   }
+   .block-views-blockopleidingen-block-2{
+    h2{
+      font-size: 2.8rem;
+    }
+    .grid-sizer{
+      width: 100%;
+    }
+    .gutter-sizer{
+      width: 0;
+    }
+    .views-row{
+      width: 100%;
+      height: auto;
+      h4{
+        font-size: 2.2rem;
+      }
+      a{
+        height: auto;
+        padding: 3rem 2rem 3rem;
+      }
+    }
+  }
+}

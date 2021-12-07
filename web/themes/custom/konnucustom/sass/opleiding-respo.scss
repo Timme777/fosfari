@@ -1,0 +1,105 @@
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .page-node-type-opleiding{
+    .field--name-node-title{
+      h2{
+        font-size: 3rem;
+        line-height: 4.2rem;
+      }
+    }
+    .field--name-field-introductie{
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+    }
+    .block-webform{
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+      margin-bottom: 12rem;
+      input[data-drupal-selector="edit-naam"]{
+        width: 94.4%;
+      }
+    }
+    .field--name-field-tekstitem-body{
+      h2{
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  .field--name-dynamic-twig-fieldnode-datum-opleiding-copy, .field--name-dynamic-twig-fieldnode-opleiding-time{
+      font-size: 1.5rem;
+      font-weight: 300;
+  }
+  .field--name-dynamic-token-fieldnode-opleiding-locatie-naam{
+    font-size: 1.5rem;
+  }
+  .field--name-field-opleiding-straatnaam{
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .field--name-dynamic-twig-fieldnode-datum-opleiding{
+    font-size: 1.5rem;
+  }
+  .page-node-type-opleiding{
+      .field--name-field-introductie{
+        margin-top: 3.8rem;
+      }
+      .field--name-field-extra-full-width{
+        margin-top: 4rem;
+        img{
+          padding: 0;
+        }
+      }
+      .block-webform{
+        width: 95%;
+        padding-top: 7rem;
+        margin-top: 6.3rem;
+
+        h2{
+          margin-bottom: 5rem;
+        }
+        div[data-drupal-selector="edit-firma"], input[data-drupal-selector="edit-naam"]{
+          float: none;
+          width: 100%;
+          @include box-sizing(border-box);
+        }
+        div[data-drupal-selector="edit-form-opleiding-right"]{
+          margin-left: 0;
+          width: 100%;
+          @include box-sizing(border-box);
+          input{
+            width: 100%;
+            @include box-sizing(border-box);
+          }
+        }
+      }
+  }
+  .field--name-dynamic-twig-fieldnode-datum-opleiding-copy, .field--name-dynamic-twig-fieldnode-opleiding-time{
+    margin-bottom: 2rem;
+  }
+  .opleiding__time-wrapper{
+    margin-bottom: 5rem;
+  }
+  .field--name-dynamic-copy-fieldnode-sign-up-knop-2{
+    margin-bottom: 7rem;
+  }
+  .block-views-blockopleidingen-block-1{
+    .views-row{
+      flex-flow: column wrap;
+      text-align: center;
+    }
+    .opleiding__right{
+      margin-left: 0;
+    }
+    img{
+      margin: 0 auto 2rem;
+    }
+    .views-field-field-team-naam{
+      text-align: center;
+    }
+    .views-field-field-team-functie{
+      text-align: center;
+    }
+  }
+}

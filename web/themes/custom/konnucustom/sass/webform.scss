@@ -1,0 +1,136 @@
+.block-webform-block, .js-form-wrapper{
+  position: relative;
+  h2{
+      font-size: 2.6rem;
+      letter-spacing: -0.03rem;
+  }
+  h3{
+    font-size: 2rem;
+    letter-spacing: -0.03rem;
+    line-height: 2.6rem;
+    margin-top: .8rem;
+  }
+  input, textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: .1rem solid #DCDCE2;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    padding-bottom: .8rem;
+     -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+  }
+  textarea{
+      padding-left: 0;
+      padding-top: 1.4rem;
+      height: 7.55rem;
+  }
+  .form-item{
+    margin-top: 0;
+    margin-bottom: 5.55rem;
+  }
+  .checkboxes--wrapper{
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    label{
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      position: relative;
+      top: -0.23rem;
+    }
+    input{
+      margin-right: 1rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 1px solid #dcdce2;
+      -moz-appearance: checkbox;
+      -webkit-appearance:checkbox;
+      -o-appearance:checkbox;
+    }
+  }
+}
+.form__contact{
+  position: absolute;
+  top: 4.7rem;
+  right: 0;
+   .group__42{
+        @include translate(1.7158rem, 1.3932rem);
+        @include single-transition(all 0.4s ease);
+      }
+      #Exclusion_6{
+        @include transform(scale(1));
+         @include single-transition(all 0.4s ease);
+      }
+    &:hover{
+      .group__42{
+        width: 100%;
+        height: 100%;
+        @include translate(1.9158rem, 1.3932rem);
+      }
+      #Exclusion_6{
+        @include transform(scale(.91,.91));
+      }
+    }
+}
+#edit-actions{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#edit-actions-submit, #edit-actions-submit--2{
+  color: #fff;
+  background-color: $red;
+  border: 0;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1em;
+  padding: 1.8rem 3.6rem 1.5rem;
+  @include border-radius(90px);
+  @include single-transition(all 0.4s ease);
+  &:hover{
+    background-color: #000;
+  }
+}
+.webform-submission-contact-formulier-form{
+  .form-wrapper{
+    width: 61rem;
+    position: relative;
+    margin-top: 8rem;
+    overflow: hidden;
+  }
+  .form-item-naam{
+    input{
+      display: block;
+      width: 100%;
+    }
+  }
+  .form-item-e-mail{
+    float: left;
+    input{
+       width: 29.7rem;
+    }
+  }
+  .form-item-telefoonnummer{
+    float: right;
+    input{
+      width: 22.8rem;
+    }
+  }
+   .form-item-boodschap{
+    clear: left;
+    margin-bottom: 4.15rem;
+    label{
+      display: block;
+    }
+    textarea{
+      width: 100%;
+    }
+  }
+  .form-item-privacy-policy-akkoord-{
+    margin-bottom: 3.9rem;
+  }
+}
+#edit-actions--3, #edit-intro--2{
+  margin-top: 0;
+}

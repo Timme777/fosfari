@@ -1,0 +1,313 @@
+//@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+$darkbrown:#383127;
+$gold:#c7b25b;
+$grey:#908f87;
+$brokenwhite:#e9ece5;
+$beige:#d8d9bf;
+$footercolor:#aca791;
+$background-dark: #535455;
+$background-light: #7b7d7f;
+$blue: #569393;
+$blue-h: #317e7e;
+$black: #131e1e;
+$red: #E93951;
+
+// BASIC THEME ADJUSTMENTS
+html{
+  font-size: 62.5%;
+}
+
+.block-local-tasks-block{
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.tabs a{
+  padding: 10px 15px;
+  color: #fff;
+  background-color: $red;
+  &:hover{
+    color: #fff;
+    background-color: $black;
+  }
+}
+.tabs a.is-active{
+  background-color: $black;
+  color: #fff;
+}
+.region-highlighted{
+  width: 100%;
+  top: 16rem;
+  left: 50%;
+  position: absolute;
+  max-width: 136.6rem;
+  @include translateX(-50%);
+}
+#block-tabbladen{
+  margin-bottom: 3rem;
+}
+.go__top{
+  @include transform(rotate(90deg));
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  right: -1.2rem;
+  bottom: 11.4rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1.4rem 1.8rem 1rem;
+  letter-spacing: .1em;
+  cursor: pointer;
+  @include single-transition(all 0.4s ease);
+  &:hover{
+    color: $red;
+  }
+}
+body{
+  font-size: 15px;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+  line-height: 1.8rem;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color:#000;
+  //padding-top: 0 !important;
+}
+.main__logo{
+    display: block;
+    width: 137.82px;
+    height: 33px;
+}
+
+h1{
+  display: none;
+}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin: 0;}
+h2{
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+}
+
+
+a{
+  text-decoration: none;
+  @include single-transition(all 0.4s ease);
+  color: $red;
+  &:hover{
+    color: #000;
+  }
+}
+hr{
+  display: block;
+  height: .2rem;
+  border: none;
+  background-color: #f6f6f6;
+  margin-bottom: 1em;
+}
+.layout-content__inner{
+  max-width: 136.6rem;
+  width: 100%;
+  margin: 0 auto;
+  padding:0 .8rem;
+  @include box-sizing(border-box);
+  position: relative;
+  overflow: hidden;
+}
+ul.menu{
+  margin:0;
+}
+.menu-item{
+  padding-top: 0;
+}
+p{
+    margin-top: 0;
+    //margin-bottom: 0;
+}
+p:last-child{
+  margin-bottom: 0;
+}
+input{
+  border-radius: 0;
+}
+textarea{
+  padding: .5rem;
+}
+
+:focus{
+  outline: none;
+  color: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #252627;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #252627;
+}
+
+.go-back{
+  color: #fff;
+  display: inline-block;
+  background-color: #000;
+  padding: 1.8rem 3.4rem 1.7rem 4.5rem;
+  border: 1px solid #000;
+  border-top-right-radius: 90px;
+  -moz-border-top-right-radius: 90px;
+  -o-border-top-right-radius: 90px;
+  -webkit-border-top-right-radius: 90px;
+  -moz-border-bottom-right-radius: 90px;
+  -webkit-border-bottom-right-radius: 90px;
+  -o-border-bottom-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+  position: fixed;
+  bottom: 0rem;
+  font-weight: 600;
+  left: -3rem;
+  z-index: 9;
+  &:hover{
+    border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -o-border-top-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -o-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: $red;
+  }
+}
+
+
+img{
+  display: block;
+}
+/* User */
+
+.user-login-form{
+  input[type="text"],input[type="password"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 320px;
+    color: $black;
+    border-color: #DCDCE2;
+    border-height: 1px;
+  }
+
+  input[type=submit]{
+    //background: $yellow;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    @include single-transition(all 0.4s ease);
+    background-color: $red;
+    @include border-radius(90px);
+    &:hover{
+      background-color:#000;
+      color: $red;
+    }
+  }
+  .description{
+    font-size: 1.0rem;
+    padding-top: 1rem;
+  }
+}
+
+
+.path-user{
+  .region-highlighted{
+    top: 9rem;
+  }
+ main{
+     height: calc(100vh - 32.3rem);
+     width: 100%;
+     max-width: 136.6rem;
+     margin: 0 auto 0;
+     padding-top: 13rem;
+  }
+  .user-login-form{
+    margin-top: 5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .path-user{
+     main{
+      padding: 0 2.5%;
+     }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .path-user{
+     main{
+      padding: 0 5%;
+     }
+  }
+}
+/* EDITOR */
+
+ .toolbar-tray .toolbar-icon{
+
+}
+.toolbar-tray-horizontal .menu-item a:focus,.toolbar-tray-horizontal .menu-item a:hover{
+    background: $red;
+    color: #fff !important;
+  }
+.toolbar .toolbar-icon-admin-toolbar-tools-help,.toolbar .toolbar-handle{
+
+  &:before{
+    top: 0 !important;
+  }
+}
+
+
+.toolbar-menu{
+  .menu-item{
+    a{
+      padding-left: 1.73rem;
+      &:hover{
+        background: $red;
+        color: #fff !important;
+        text-decoration: none;
+      }
+    }
+    &:before{
+      display: none;
+    }
+  }
+  .menu-item--expanded{
+    a{
+      padding-left: 4rem;
+    }
+  }
+}
+ .path-admin .toolbar-menu > li:last-of-type{
+    a{
+      padding-left: 3.5rem;
+    }
+  }
+
+.toolbar-tray .toolbar-icon-system-modules-list,.toolbar-tray .toolbar-icon-system-admin-content,.toolbar-tray .toolbar-icon-system-admin-structure,.toolbar-tray .toolbar-icon-entity-user-collection,.toolbar-tray .toolbar-icon-system-admin-reports,.toolbar-tray .toolbar-icon-help-main
+,.toolbar-tray .toolbar-icon-system-themes-page,.toolbar-tray .toolbar-icon-system-admin-config{
+  &:before{
+    top: 0 !important;
+  }
+}
+.toolbar .toolbar-toggle-orientation [value="vertical"]::before{
+  top: 0 !important;
+}

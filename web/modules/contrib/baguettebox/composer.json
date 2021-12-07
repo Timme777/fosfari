@@ -1,0 +1,16 @@
+{
+    "name": "drupal/baguettebox",
+    "type": "drupal-module",
+    "description": "A BaguetteBox image formatter.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/baguettebox",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/baguettebox",
+        "source": "https://git.drupalcode.org/project/baguettebox"
+    },
+    "require": {
+        "php": ">=7.1.0",
+        "drupal/core": "^8.7 || ^9.0"
+    }
+}

@@ -1,0 +1,65 @@
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .field--name-field-extra-square-afbeelding{
+    margin-top: 4rem;
+    .field__item{
+      width: 50%;
+      margin-bottom: 2rem;
+    }
+    .field__item:last-of-type{
+      margin-bottom: 2rem;
+    }
+  }
+  .page-node-type-vacature{
+    .field--name-field-extra-full-width{
+      margin-top: 4rem;
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .page-node-type-vacature{
+    .layout-content__inner{
+      margin-bottom: 9rem;
+    }
+    .field--name-node-title h2{
+      font-size: 3rem;
+      line-height: 4.2rem;
+    }
+    .field--name-field-introductie{
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+   .page-node-type-vacature{
+    .field--name-field-introductie{
+      margin-top: 3.8rem;
+    }
+    .field--name-field-extra-full-width{
+      img{
+        padding: 0;
+      }
+    }
+   }
+   .vacature__info-wrapper{
+    margin-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    > div{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    div:last-of-type{
+      margin-bottom: 0;
+    }
+   }
+   .field--name-field-extra-square-afbeelding{
+      .field__item{
+        width: 100%;
+        padding: 0;
+        img{
+           margin: 0 auto;
+        }
+      }
+    }
+}

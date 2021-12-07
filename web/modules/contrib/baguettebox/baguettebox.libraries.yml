@@ -1,0 +1,17 @@
+formatter:
+  js:
+    js/baguettebox.js: {}
+  dependencies:
+    - baguettebox/baguettebox
+    - core/drupal
+baguettebox:
+  remote: https://github.com/feimosi/baguetteBox.js
+  version: 1.11.1
+  license:
+    name: MIT
+    gpl-compatible: true
+  js:
+    /libraries/baguettebox.js/dist/baguetteBox.min.js: {minified: true}
+  css:
+    component:
+      /libraries/baguettebox.js/dist/baguetteBox.min.css: {minified: true}

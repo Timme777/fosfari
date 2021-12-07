@@ -1,0 +1,82 @@
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .page-node-type-merk{
+    .layout-content__inner{
+      padding-top: 12rem;
+      h1{
+        font-size: 3rem;
+      }
+    }
+    .block-system-main-block{
+      width: 100%;
+      margin-top: 9rem;
+    }
+    .left__region{
+      float: none;
+      margin: 0 0 3rem;
+       img{
+        margin: 0 auto;
+      }
+    }
+     .main__region{
+      float: none;
+      margin: 0 auto;
+      width: 85%;
+     }
+    .field--name-field-merk-logo{
+        float: none;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        img{
+          margin: 0 auto;
+        }
+    }
+    .merk__body-wrapper{
+      float: none;
+      margin: 0 auto;
+    }
+    .right__region{
+      width: 100%;
+    }
+  }
+  .field--name-field-page-bestanden{
+    text-align: center;
+    margin: 0;
+  }
+  .field--name-field-bestand{
+    margin: 0 auto;
+    max-width: 62.9rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .page-node-type-merk{
+   .block-system-main-block{
+    margin-top: 7rem;
+   }
+    .main__region{
+      width: 100%;
+    }
+   .merk__website-wrapper{
+    margin-bottom: 5rem;
+   }
+    .field--name-field-extra-full-width{
+      img{
+        padding: 0;
+      }
+    }
+  }
+  .field--name-field-page-bestanden{
+    text-align: left;
+  }
+  .field--name-field-bestand-label{
+    line-height: 3.8rem !important;
+  }
+  .field--name-field-bestand{
+    max-width:100%;
+    display: block;
+    text-align: left;
+    .field__item{
+      width: 100% !important;
+      margin-bottom: 1.8rem !important;
+    }
+  }
+}

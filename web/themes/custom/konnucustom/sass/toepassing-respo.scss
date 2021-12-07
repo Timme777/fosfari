@@ -1,0 +1,59 @@
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .page-node-type-applicatie{
+    .field--name-field-referentie-header{
+      margin-bottom: 7rem;
+    }
+    .field--name-body{
+      margin-top: 5rem;
+    }
+    .field--name-field-page-bestanden{
+      margin-left: 0;
+    }
+  }
+  .block-views-blocktoepassingen-block-1{
+    margin-bottom: 14rem;
+    .grid-sizer{
+      width: 32.5%;
+    }
+    .gutter-sizer{
+      width: 1.3%;
+    }
+   .views-row{
+     width: 32.5%;
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .page-node-type-applicatie{
+    .field--name-field-applicatie-titel-opmaak{
+      font-size: 2.2rem;
+      line-height: 3.9rem;
+      margin-bottom: 5rem;
+    }
+    .field--name-field-referentie-header{
+      margin-bottom: 5rem;
+    }
+    .field--name-field-introductie{
+       font-size: 1.6rem;
+      line-height: 3.2rem;
+    }
+    .field--name-body{
+      margin-bottom: 10rem;
+    }
+    .field--name-field-page-bestanden{
+      margin-bottom: 4rem;
+    }
+  }
+  .block-views-blocktoepassingen-block-1{
+    margin-bottom: 14rem;
+    .grid-sizer{
+      width: 100%;
+    }
+    .gutter-sizer{
+      width: 0;
+    }
+   .views-row{
+     width: 100%;
+    }
+  }
+}

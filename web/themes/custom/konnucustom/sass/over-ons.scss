@@ -1,0 +1,229 @@
+.view-team{
+  .grid-sizer{
+    width: 443px;
+  }
+  .gutter-sizer{
+    width: 3px;
+  }
+}
+
+.page-nid--12{
+  .layout-content__inner{
+    padding-top: 13.4rem;
+    > h2{
+      font-size: 3.6rem;
+      line-height: 4.1rem;
+      text-align: center;
+    }
+  }
+  .content-second, .content-third{
+    max-width: 136.6rem;
+    padding: 0 .8rem;
+    margin: 0 auto;
+    @include box-sizing(border-box);
+    position: relative;
+  }
+  .content-third{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+}
+.over-ons__menu{
+  text-align: center;
+  margin: 6rem 0 3.8rem;
+  a{
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+    color: #000;
+    margin-right: 7rem;
+  }
+  a:last-of-type{
+    margin-right: 0;
+  }
+  a.is-active{
+    font-weight: 700;
+  }
+}
+.over-ons__wrapper{
+  display: inline-block;
+}
+.over-ons__header{
+  width: 100%;
+  height: auto;
+}
+.over-ons__introductie{
+    width: 100%;
+    max-width: 70rem;
+    margin:  9.4rem auto 0;
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 3.4rem;
+}
+.over-ons__missie{
+  margin-top: 13.9rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 83.1rem;
+  margin-left: 13.17%;
+  @include box-sizing(border-box);
+  .left__region{
+    font-size: 3rem;
+    letter-spacing: -0.05rem;
+    line-height: 3.6rem;
+    float: left;
+    margin-right: 10.7rem;
+  }
+  .main__region{
+    width: 100%;
+    float: left;
+    max-width: 61.7rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+  }
+}
+
+// team
+
+.block-views-blockteam-block-1{
+  margin-top: 14.9rem;
+  h2{
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin-left: 13.17%;
+    margin-bottom: 1.2rem;
+  }
+   .grid-sizer{
+    width: 32.81%;
+  }
+  .gutter-sizer{
+    width: 0.81%;
+  }
+  .view-content{
+    opacity: 0;
+    @include single-transition(all 0.4s ease);
+  }
+   .view-content.show{
+    opacity: 1;
+  }
+ .views-row{
+    width: 32.81%;
+    margin-bottom: .73rem;
+    @include box-sizing(border-box);
+  }
+  .views-field-field-team-profielfoto{
+    position: relative;
+    a{
+       &:before{
+        content:"";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.2);
+        z-index: 1;
+        @include single-transition(all 0.6s ease);
+      }
+       &:hover{
+        &:before{
+           background: rgba(0,0,0,0);
+        }
+       }
+    }
+
+    img{
+       filter: none;
+      -webkit-filter:saturate(0%);
+      -moz-filter: saturate(0%);
+      -ms-filter: saturate(0%);
+      -o-filter: saturate(0%);
+      @include single-transition(all 0.4s ease);
+      width: 100%;
+      height: auto;
+    }
+    &:hover{
+      img{
+        filter: none;
+        -webkit-filter:saturate(100%);
+      -moz-filter: saturate(100%);
+      -ms-filter: saturate(100%);
+      -o-filter: saturate(100%);
+      }
+
+    }
+  }
+  .team__inner{
+    position: absolute;
+    left: 50%;
+    bottom: 10.1rem;
+    @include translateX(-50%);
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    z-index: 4;
+    h4{
+      line-height: 2.3rem;
+      font-size: 2.1rem;
+      letter-spacing: 0.02rem;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+  .team__functie{
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+  }
+}
+.block-views-blockover-ons-block-1{
+  max-width: 136.6rem;
+  padding: 0 .8rem;
+  width: 100%;
+  margin: 15rem auto 0;
+  @include box-sizing(border-box);
+   h2{
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin-left: 13.17%;
+    margin-bottom: 1.2rem;
+  }
+  .view-content{
+    opacity: 0;
+    @include single-transition(all 0.4s ease);
+  }
+  .view-content.show{
+    opacity: 1;
+  }
+  .views-row{
+    a{
+       &:before{
+        content:"";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+        z-index: 0;
+        opacity: 0;
+        @include single-transition(all 0.6s ease);
+      }
+      &:hover{
+        &:before{
+          opacity: 1;
+        }
+        .toepassing__examples-info{
+          opacity: 1;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

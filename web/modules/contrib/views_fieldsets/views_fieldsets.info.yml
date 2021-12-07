@@ -1,0 +1,5 @@
+name: Views Fieldsets
+type: module
+description: Adds fieldsets to Views.
+package: Views
+core_version_requirement: ^8 || ^9

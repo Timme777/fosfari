@@ -1,0 +1,131 @@
+.page-node-type-applicatie{
+  .layout-content__inner{
+    padding-top: 13.4rem;
+  }
+  .field--name-field-referentie-header{
+    margin-bottom: 9.4rem;
+  }
+  .field--name-field-applicatie-titel-opmaak{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    line-height: 5.8rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto 6rem;
+  }
+  .field--name-field-introductie{
+    width: 100%;
+    max-width: 70rem;
+    font-size: 1.9rem;
+    line-height: 3.4rem;
+    font-weight: 300;
+    margin: 0 auto;
+  }
+  .field--name-body{
+    width: 100%;
+    max-width: 70rem;
+    margin: 6rem auto 16.9rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+  }
+  .field--name-field-page-bestanden{
+    margin-left: 13.33%;
+    margin-bottom: 13.25rem;
+  }
+  .field--name-field-bestand-label {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 4rem;
+  }
+  .field--name-field-bestand {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 62.9rem;
+    .field__item{
+      margin-bottom: 2.25rem;
+      width: 50%;
+    }
+    a{
+      line-height: 2.9rem;
+      font-weight: 600;
+      color: #000;
+      text-decoration: underline;
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}
+.block-views-blocktoepassingen-block-1{
+  margin-bottom: 28rem;
+  position: relative;
+  .grid-sizer{
+    width: 24.51%;
+  }
+  .gutter-sizer{
+    width: 0.59%;
+  }
+  .view-content{
+    opacity: 0;
+    @include single-transition(all 0.4s ease);
+  }
+  .view-content.show{
+    opacity: 1;
+  }
+ .views-row{
+   width: 24.51%;
+   margin-bottom: .8rem;
+   img{
+    width: 100%;
+    height: auto;
+   }
+  a{
+    &:before{
+      content:"";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      z-index: 0;
+      @include single-transition(all 0.6s ease);
+    }
+    &:hover{
+      &:before{
+        background: rgba(0,0,0,0.6);
+      }
+    }
+  }
+  &:hover{
+    .toepassing__examples-info{
+        opacity: 1;
+        z-index: 0;
+      }
+  }
+ }
+}
+.toepassing__examples-info{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  @include translateX(-50%);
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  opacity: 0;
+  @include single-transition(all 0.6s ease);
+  i{
+    display: block;
+    color: #E93951;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    @include translate(0, 0);
+  }
+}

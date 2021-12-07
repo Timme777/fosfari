@@ -1,0 +1,142 @@
+.page-node-type-page, .page-node-type-faq, .page-node-type-downloads{
+   .layout-content__inner{
+    padding-top: 13.4rem;
+  }
+  .field--name-node-title{
+    margin-bottom: 7rem;
+    h2{
+      font-size: 3.6rem;
+      line-height: 4.1rem;
+      text-align: center;
+    }
+  }
+  .field--name-field-tekst-item{
+    margin: 10.4rem auto 0;
+    .one-column{
+        width: 100%;
+        max-width: 70rem;
+        margin:  0 auto;
+    }
+    .two-column{
+       position: relative;
+      overflow: hidden;
+      .main__region{
+        width: 100%;
+        max-width: 62.3rem;
+        float: left;
+      }
+    }
+    .left__region{
+      float: left;
+      margin-left: 13.33%;
+      width: 20rem;
+    }
+     > .field__item:last-of-type{
+        margin-bottom: 128px;
+    }
+    .left__region{
+      font-size: 3rem;
+      letter-spacing: -0.05rem;
+      line-height: 3.6rem;
+       float: left;
+       margin-right: 10.7rem;
+    }
+    h2{
+      font-size: 5.2rem;
+      line-height: 7rem;
+      font-weight: 600;
+      letter-spacing: -.05rem;
+      margin-bottom: 2.7rem;
+    }
+  }
+
+  .field--name-field-bestand-label{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 4rem;
+  }
+  .field--name-field-bestand{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 62.9rem;
+    .field__item{
+       margin-bottom: 2.25rem;
+       width: 50%;
+    }
+    a{
+      line-height: 2.9rem;
+      font-weight: 600;
+      color: #000;
+      text-decoration: underline;
+      &:hover{
+         color: $red;
+      }
+    }
+  }
+  .layout-content__inner{
+    margin-bottom: 15.6rem;
+  }
+}
+.field--name-field-page-bestanden{
+  margin-left: 13.33%;
+  margin-top: 16.8rem;
+}
+
+// LAAS
+.page-nid--27{
+  .field--name-field-page-bestanden{
+    margin-bottom: 12.5rem;
+  }
+ .block-webform{
+    width: 70rem;
+    margin: 10.5rem auto 0;
+    background-color: #F6F6F6;
+    padding: 7.2rem 5.3rem 6.8rem;
+    position: relative;
+    overflow: hidden;
+    @include box-sizing(border-box);
+    input{
+      background-color: transparent;
+    }
+    h2{
+      text-align: center;
+      margin-bottom: 8.2rem;
+    }
+    input[data-drupal-selector="edit-naam"], input[data-drupal-selector="edit-firma"]{
+      width: 100%;
+    }
+    div[data-drupal-selector="edit-form-opleiding-left"]{
+      float: left;
+      width: 29.7rem;
+      input{
+        width: 100%;
+      }
+    }
+    div[data-drupal-selector="edit-container"]{
+      position: relative;
+      overflow: hidden;
+    }
+    .form-item-e-mail{
+      width: 29.7rem;
+      float: left;
+      margin-right: 4.9rem;
+      input{
+
+        width: 100%;
+      }
+    }
+     .form-item-telefoonnummer{
+      float: left;
+    }
+    textarea{
+      background-color: transparent;
+    }
+
+    fieldset[data-drupal-selector="edit-privacy-policy"]{
+      clear: both;
+    }
+
+  }
+
+}

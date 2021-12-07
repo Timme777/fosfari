@@ -1,0 +1,34 @@
+global-styling:
+ version: 1.x
+ css:
+    theme:
+      css/theme/base.css: {}
+ js:
+  lib/main.js: {}
+
+ dependencies:
+    - core/drupal
+    - core/jquery.once
+
+masonry:
+  version: 1.x
+  js:
+    https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js: {type: external}
+
+images-loaded:
+  version: 1.x
+  js:
+    https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js: {type: external}
+
+fancybox:
+  version: 1.x
+  css:
+    base:
+      https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css: {type: external}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js: {type: external}
+
+friconix:
+  version: 1.x
+  js:
+     https://friconix.com/cdn/friconix.js: { type: external }

@@ -1,0 +1,241 @@
+.primary__menu{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  height: auto;
+  @include single-transition(all 0.8s ease);
+  z-index: 99;
+  visibility: visible;
+}
+.primary__menu--inner{
+  width: 100%;
+  max-width: 136.6rem;
+  padding: 2.3rem 0 5rem .8rem;
+  margin: 0 auto;
+  position: relative;
+  @include box-sizing(border-box);
+}
+.primary__menu.up{
+  height: 7.3rem;
+  opacity: 1;
+  visibility: visible;
+}
+.primary__menu.down{
+  height: 0;
+  @include opacity(0);
+  visibility: hidden;
+}
+.main__logo{
+  float: left;
+  @include single-transition(all 0.6s ease);
+  path{
+    @include single-transition(all 0.6s ease);
+  }
+}
+.main__menu--counter{
+  position: absolute;
+  top: -1.2rem;
+  right: -2rem;
+  color: #fff;
+  font-size: 1rem;
+  background-color: $red;
+  width: 1.6rem;
+  height: 1.6rem;
+  @include border-radius(9rem);
+  text-align: center;
+
+  //@include box-sizing(border-box);
+}
+.header-burger{
+  position: absolute;
+  top: 3rem;
+  right: .8rem;
+  width: 2.7rem;
+  z-index: 9;
+}
+.header-burger__lines{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover{
+    .line-3{
+      //width: 100%;
+    }
+  }
+}
+.line{
+  background-color: #000;
+  display: block;
+  width: 100%;
+  height: .2rem;
+  @include single-transition(all 0.4s ease);
+}
+.line-2{
+  margin: .5rem 0;
+}
+.line-3{
+  width: 40%;
+  float: right;
+}
+
+//general menu
+
+.menu{
+  a, span{
+    color: #000;
+    @include single-transition(all 0.6s ease);
+  }
+}
+
+.menu--main{
+  float: left;
+  margin-top: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  position: relative;
+
+  @include single-transition(all 0.6s ease);
+  z-index: -1;
+  li{
+    float: left;
+    margin-right: 6.1rem;
+    position: relative;
+    ul{
+      position: absolute;
+      background-color: #000;
+      left: 0;
+      padding: 1rem 1.8rem 1.2rem;
+      opacity: 0;
+      visibility: hidden;
+      @include single-transition(all 0.4s ease);
+      li{
+        float: none;
+        margin-right: 0;
+        padding: 1.2rem 1.2rem .4rem;
+      }
+      a{
+        line-height: 1.6em;
+        color: #fff;
+      }
+      a.is-active{
+        color: $red;
+        font-weight: 400;
+      }
+    }
+  }
+  ul{
+    > li.menu-item--active-trail{
+      > a{
+        color: $red;
+        font-weight: 400;
+      }
+    }
+  }
+
+  a, span{
+    font-size: 1.5rem;
+  }
+.menu-item--expanded{
+  list-style-type: none;
+  list-style-image: none;
+  > span, > a{
+    padding-right: 1.6rem;
+      &:after{
+      content: '';
+      border-left: .4rem solid transparent;
+      border-right: .4rem solid transparent;
+      border-top: 0.6rem solid #000000;
+      position: absolute;
+      top: .5rem;
+      right: 0;
+    }
+  }
+  &:hover{
+    ul{
+      opacity: 1;
+      visibility: visible;
+    }
+
+  }
+}
+.menu-item--active-trail span, a.is-active, .menu-item--active-trail a{
+    font-weight: 700;
+}
+ a.is-active{
+    font-weight: 700;
+}
+a, span{
+    display: block;
+    &:hover{
+      color: $red;
+      cursor:  pointer;
+    }
+  }
+  span::hover{
+    color: #000;
+  }
+}
+
+.block-language{
+  float: left;
+  padding-left: 45px;
+  opacity: 0;
+  visibility: invisible;
+  margin-top: .3rem;
+  @include single-transition(all 0.4s ease);
+  ul{
+    list-style-type: none;
+    margin: 0;
+  }
+  li{
+    float: left;
+
+  }
+  a{
+    font-size: 1.1rem;
+    display: block;
+    color: #000;
+    line-height: 1em;
+    padding: 1.1rem .9rem .7rem;
+    &:hover{
+      color: #fff;
+      background-color: #000;
+    }
+  }
+  a.is-active{
+    color: #fff !important;
+    background-color: #000;
+  }
+}
+
+// menu open
+
+.is-open, .up{
+  .logo__first{
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .main__logo path{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu--main{
+    opacity: 1;
+   visibility: visible;
+   left: -3%;
+   z-index: 1;
+  }
+  .block-language{
+    padding-left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  .line{
+    float: none;
+  }
+  .line-2{
+    width: 75%
+  }
+}

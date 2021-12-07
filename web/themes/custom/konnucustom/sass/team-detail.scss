@@ -1,0 +1,36 @@
+.page-node-type-team-member{
+  .layout-content__inner{
+    padding-top: 13.4rem;
+    padding-bottom: 10.7rem;
+  }
+  .field--name-dynamic-token-fieldnode-naam-team{
+      font-size: 3.6rem;
+      line-height: 4.1rem;
+      text-align: center;
+      margin-bottom: 1.6rem;
+  }
+  .field--name-field-team-functie{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    text-align: center;
+     margin-bottom: 2.5rem;
+  }
+  .field--name-field-team-e-mail{
+    text-align: center;
+    padding: 2.4rem 0 4rem;
+    a{
+      font-size: 2rem;
+      line-height: 2.6rem;
+    }
+  }
+  img{
+    margin: 0 auto;
+  }
+  .field--name-body{
+    width: 70rem;
+    margin:  0 auto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+}

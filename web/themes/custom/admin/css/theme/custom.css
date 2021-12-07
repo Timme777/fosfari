@@ -1,0 +1,102 @@
+.content-header{
+  padding-bottom: 12px;
+  padding-top: 0;
+}
+.layout-container{
+  padding-top:24px;
+  position: relative;
+  overflow: hidden;
+}
+.region-header{
+  float: left;
+}
+.region-primary-menu{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.region-primary-menu li{
+  list-style-type: none;
+  display: inline-block;
+}
+.region-primary-menu a{
+  margin: 0 1.2rem;
+}
+.region-primary-menu span{
+  display: none;
+}
+.view-filters .form-actions{
+  float: left;
+  clear: inherit;
+  margin-left: 15px;
+  margin-top: 8px;
+}
+/* EDITOR */
+
+ .toolbar-tray .toolbar-icon:before{
+    top: 13px !important;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free" !important;
+  }
+  .toolbar-tray .toolbar-icon:hover{
+    color: #198551;
+    text-decoration: none;
+  }
+   .toolbar-tray .toolbar-icon:hover:before{
+      color:#198551;
+   }
+
+.toolbar .toolbar-icon-admin-toolbar-tools-help:before,.toolbar .toolbar-handle:before{
+  top: 0 !important;
+}
+.toolbar-menu .menu-item a{
+    padding-left: 17.33px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+ }
+ .toolbar-menu .menu-item a:hover,.toolbar-menu .menu-item a:focus,.toolbar-menu .menu-item a.is-active{
+    color: #fff !important;
+    background: #E93951;
+    text-decoration: none;
+ }
+ .toolbar-menu .menu-item--expanded a{
+    padding-left: 3rem;
+ }
+ .language-switcher-language-url{
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+ }
+ .language-switcher-language-url li{
+    display: inline-block;
+ }
+  .language-switcher-language-url li.is-active a{
+    text-decoration: underline;
+  }
+
+
+
+
+.toolbar-tray .toolbar-icon-system-modules-list:before,.toolbar-tray .toolbar-icon-system-admin-content:before,.toolbar-tray .toolbar-icon-system-admin-structure:before,.toolbar-tray .toolbar-icon-entity-user-collection:before,.toolbar-tray .toolbar-icon-system-admin-reports:before,.toolbar-tray .toolbar-icon-help-main:before
+,.toolbar-tray .toolbar-icon-system-themes-page:before,.toolbar-tray .toolbar-icon-system-admin-config:before{
+    top: 0 !important;
+}
+.toolbar-tray .toolbar-icon-toggle-vertical:before{
+  top: 0 !important;
+}
+
+.site-logo{
+  width: 126px;
+  height: 116px;
+  display: inline-block;
+  position: relative;
+}
+.site-logo img{
+  display: block;
+}
+
+.path-admin .view-content{
+
+}

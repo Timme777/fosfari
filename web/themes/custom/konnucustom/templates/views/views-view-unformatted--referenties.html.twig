@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+  <div class="gutter-sizer"></div>
+ <div class="grid-sizer"></div>
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div class="views-row {{view.style_plugin.getField(loop.index0, 'type')}}">
+
+    <a href="{{view.style_plugin.getField(loop.index0, 'view_node') }}">
+    <div class=".referentie__list--animate">
+      {{view.style_plugin.getField(loop.index0, 'field_referentie_img_home') }}
+      <div class="referentie__list--content">
+        <h4>{{view.style_plugin.getField(loop.index0, 'field_referentie_soort') }}</h4>
+        <h3>{{view.style_plugin.getField(loop.index0, 'title') }}</h3>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="43.199" height="33.345" viewBox="0 0 45.199 33.345">
+        <path id="Exclusion_6" data-name="Exclusion 6" d="M17.075,33.345A17.5,17.5,0,0,1,13.64,33,17.187,17.187,0,0,1,5.009,28.45a16.958,16.958,0,0,1-2.087-2.471,16.6,16.6,0,0,1-1.577-2.834,16.278,16.278,0,0,1,0-12.968,16.555,16.555,0,0,1,1.577-2.83A16.916,16.916,0,0,1,5.009,4.882,17.2,17.2,0,0,1,13.64.339a17.556,17.556,0,0,1,6.869,0,17.173,17.173,0,0,1,8.622,4.552,16.98,16.98,0,0,1,2.086,2.468,16.643,16.643,0,0,1,1.577,2.829,16.229,16.229,0,0,1,.011,12.957,16.6,16.6,0,0,1-1.577,2.834,16.958,16.958,0,0,1-2.087,2.471A17.194,17.194,0,0,1,20.51,33,17.5,17.5,0,0,1,17.075,33.345Zm0-27.631A11.1,11.1,0,0,0,5.852,16.664,11.11,11.11,0,0,0,17.075,27.631,11.11,11.11,0,0,0,28.3,16.664,11.124,11.124,0,0,0,17.075,5.714Z" fill="#dcdce2" opacity="0.3"/>
+        <g class="svg__wrapper"> <g class="group__42" data-name="Group 42" transform="translate(17.158 13.932)">
+        <line id="Line_3" data-name="Line 3" x2="25.194" transform="translate(0 2.663)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Path_15" data-name="Path 15" d="M2025.425-316.427l3.643-2.663-3.643-2.663" transform="translate(-2003.874 321.752)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g></g>
+      </svg>
+    </div>
+  </a>
+</div>
+{% endfor %}

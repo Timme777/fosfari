@@ -1,0 +1,41 @@
+<?php
+
+Use \Drupal\Core\Routing;
+use Drupal\taxonomy\Entity\Term;
+
+ function admin_preprocess_page(array &$variables) {
+   // Theme name: 'example', library name: 'example'.
+    $path = \Drupal::service('path.current')->getPath();
+
+    $variables['#attached']['library'][] = 'admin/global-styling';
+ }
+
+function admin_preprocess_links__language_block(&$variables) {
+  $variables['links']['nl']['link']['#title'] = 'NL';
+  $variables['links']['en']['link']['#title'] = 'EN';
+  $variables['links']['fr']['link']['#title'] = 'FR';
+}
+
+
+function admin_form_alter(&$form, &$form_state, $form_id){
+
+	if ($form['#id'] == 'views-exposed-form-stats-city-page-1'|| $form['#id'] == 'views-exposed-form-stats-city-page-2') {
+		    $nids = \Drupal::entityQuery('node')->condition('type','location')->sort('title', 'ASC')->execute();
+    		$nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+    		$options = ['' => 'All'];
+
+    		foreach($nodes as $nid => $node) {
+
+          //$value = $node->title->value;
+    			$tid = $node->get('field_locatie_stad')->getValue();
+    			$stadTerm = Term::load($tid[0]['target_id']);
+    			$stad = $stadTerm->getName();
+          $options[$stad] = $stad;
+      }
+		if (isset($form['field_registration_locatie_value'])) {
+      			$form['field_registration_locatie_value']['#type'] = 'select';
+      			$form['field_registration_locatie_value']['#options'] = $options;
+      			$form['field_registration_locatie_value']['#size'] = 1;
+    		}
+	}
+}
