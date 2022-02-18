@@ -354,7 +354,9 @@ Drupal.behaviors.anchorScroll = {
       });
       }
       animateLink(link);
-      var dest = $('.block-views-blockopleidingen-block-1').offset().top + 150;
+
+      //var dest = $('.block-views-blockopleidingen-block-1 .block-webform').offsetTop;
+      var dest = document.getElementById("block-webformulier").offsetTop + 30;
       link1.click(function(){
         $("body, html").animate({scrollTop:dest}, 2000, 'swing');
       });
