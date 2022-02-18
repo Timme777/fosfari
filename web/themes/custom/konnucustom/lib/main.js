@@ -327,31 +327,40 @@ Drupal.behaviors.anchorScroll = {
     attach: function (context, settings) {
       var hashTagActive = "";
       var link = $('.over-ons__menu a');
-      var link1 = $('.field--name-dynamic-token-fieldnode-inschrijfknop a');
-      var link2 = $('.field--name-dynamic-token-fieldnode-inschrijfknop-copy a');
+      var link1 = $('.field--name-dynamic-twig-fieldnode-sign-up-knop a');
+      var link2 = $('.field--name-dynamic-copy-fieldnode-sign-up-knop-2 a');
       function animateLink(link){
          link.once('myCustomBehavior').on("click touchstart" , function (event) {
-          if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+          $hash = $(this.hash);
+
+          if(hashTagActive != $hash) { //this will prevent if the user click several times the same link to freeze the scroll.
               event.preventDefault();
               //calculate destination place
               var dest = 0;
-              if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+              if ($hash.offset().top > $(document).height() - $(window).height()) {
                   dest = $(document).height() - $(window).height();
+                   console.log('in');
               } else {
-                  dest = $(this.hash).offset().top;
+                  dest = $hash.offset().top;
               }
               //go to destination
               $('html,body').animate({
                   scrollTop: dest
               }, 2000, 'swing');
-              hashTagActive = this.hash;
+
+              hashTagActive = $hash;
+              return false;
           }
       });
       }
-      animateLink(link1);
       animateLink(link);
-      animateLink(link2);
-
+      var dest = $('.block-views-blockopleidingen-block-1').offset().top + 150;
+      link1.click(function(){
+        $("body, html").animate({scrollTop:dest}, 2000, 'swing');
+      });
+      link2.click(function(){
+        $("body, html").animate({scrollTop:dest}, 2000, 'swing');
+      });
       link.click(function(event){
         event.preventDefault();
         link.removeClass('is-active');
